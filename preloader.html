@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="./css/preload.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="preload">
+		<div class="loading-page">
+			<div class="container">
+				<div class="counter">
+					<h1>0</h1>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	
+	<script>
+		$(document).ready(function(){
+			var counter = 0;
+			var c = 0;
+			var i = setInterval(function(){
+
+				$('.loading-page .counter h1').html(c);
+				$('.loading-page').css('width', c + "%");
+
+				counter++;
+				c++;
+
+				if (counter == 101) {
+					clearInterval(i);
+				}
+
+			}, 50);
+		});
+	</script>
+</body>
+</html>

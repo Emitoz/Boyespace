@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BoyeSpace | Services</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script type="text/javascript" src="jquery-min-3.0.0.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/services.css">
+</head>
+<body>
+	<header>
+		<nav class="topnav">
+				<div class="branding">
+					<a href="index.html"><h2><span id="highlight">BOYE</span><span id="boldhighlight">SPACE</span></h2></a>
+				</div>
+				<ul class="topnav" id="myTopnav">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li class="current" ><a href="services.html">SERVICES</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+
+			<nav class="mobilenav">
+				<div class="container">
+					<a href="javascript:void(0);" class="icon">
+					    <i class="fa fa-bars"></i>
+					 </a>
+					<ul >
+						<li><div class="branding">
+						<a href="index.html"><h3><span id="highlight">BOYE</span><span id="boldhighlight">SPACE</span></h3></a>
+						</div></li>
+						<li class="nav-item-mobile"><hr></li>
+						<li class="nav-item-mobile"><a href="index.html">HOME</a></li>
+						<li class="nav-item-mobile"><a href="about.html">ABOUT</a></li>
+						<li class="nav-item-mobile"><a href="services.html">SERVICES</a></li>
+						<li class="nav-item-mobile"><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</div>
+			</nav>			
+	</header>
+	<section class="services">
+		<div class="services-grid web-services">
+			<span class="film">
+				<h2>Web</h2>
+			</span>
+		</div>
+		<div class="services-grid mobile-services">
+			<span class="film">
+				<h2>Mobile</h2>
+			</span>
+		</div>
+		<div class="services-grid seo-services">
+			<span class="film">
+				<h2>seo</h2>
+			</span>
+		</div>
+		<div class="services-grid design-services">
+			<span class="film">
+				<h2>Design</h2>
+			</span>
+		</div>
+	</section>
+
+	<script>
+		$(document).ready(function(){
+			$('.icon').click(function(){
+				$('.nav-item-mobile').toggle(800);
+			});
+
+			$('.services-grid').hover(function(){
+				$('span.film').toggle();
+			});
+		});
+	</script>
+</body>
+</html>

@@ -1,15 +1,155 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Git test</title>
-</head>
-<body>
-	<ul>
-		<li>1</li>
-		<li>2</li>
-		<li>3</li>
-		<li>4</li>
-	</ul>
+	<title>Boye space</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script type="text/javascript" src="jquery-min-3.0.0.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	
+</head>
+
+<body>
+	<header class="fixed-header">
+		<nav class="topnav">
+				<div class="branding">
+					<a href="index.html"><h2><span id="highlight">BOYE</span><span id="boldhighlight">SPACE</span></h2></a>
+				</div>
+				<ul class="topnav" id="myTopnav">
+					<li class="current"><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="services.html">SERVICES</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+
+			</nav>
+
+			<nav class="mobilenav">
+				<div class="container">
+					<a href="javascript:void(0);" class="icon">
+					    <i class="fa fa-bars"></i>
+					 </a>
+					<ul >
+						<li><div class="branding">
+						<a href="index.html"><h3><span id="highlight">BOYE</span><span id="boldhighlight">SPACE</span></h3></a>
+						</div></li>
+						<li class="nav-item-mobile"><hr></li>
+						<li class="nav-item-mobile"><a href="index.html">HOME</a></li>
+						<li class="nav-item-mobile"><a href="about.html">ABOUT</a></li>
+						<li class="nav-item-mobile"><a href="services.html">SERVICES</a></li>
+						<li class="nav-item-mobile"><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</div>
+
+			</nav>
+	</header>
+
+	<section class="showcase" id="homeshowcase">
+		<!--<div class="filmOverlay"></div>
+		<button id="explore">Explore</button> -->
+		<slider>
+			<slide><div class="filmOverlay"></div><p class="slideText"> everything design</p></slide>
+			<slide><div class="filmOverlay"></div><p class="slideText">we innovate</p></slide>
+			<slide><div class="filmOverlay"></div><p class="slideText">we strategize</p></slide>
+			<slide><div class="filmOverlay"></div><p class="slideText">we're timely</p></slide>
+		</slider>
+
+		<button id="explore">Explore</button>
+	</section>
+	<section class="services">
+		<div class="container">
+			<h3 class="topic">What we do</h3>
+			<div class="blackline"></div>
+
+			<div class="closegrids">
+				<div class="grid">
+					<div class="top-img" id="web-img"
+					style="height: 150px; background: url(./assets/web2.jpg) no-repeat; background-position: center; background-size: cover;">
+						<div style="width: 100%; height: 100%; background: black; opacity: .3;"></div>
+					</div>
+					<div class="grid-text">
+						<h5 class="servicename">Web Development</h5>
+						<p class="servicedesc">We design top notch websites and web apps for businesses be it regular business websites or Ecommerce web applications</p>
+						<a href="services.html">Learn more </a>
+					</div>
+					
+				</div>
+				<div class="grid">
+					<div class="top-img" id="web-img"
+					style="height: 150px; background: url(./assets/mobile.jpg) no-repeat; background-position: center; background-size: cover;">
+						<div style="width: 100%; height: 100%; background: black; opacity: .3;"></div>
+					</div>
+					<div class="grid-text">
+						<h5 class="servicename">Mobile Development</h5>
+						<p class="servicedesc">We develop mobile applications that run across all platforms (Android, iOS) using best practices and with seamless user experience in mind</p>
+						<a href="services.html">Learn more</a>
+					</div>
+					
+				</div>
+				<div class="grid">
+					<div class="top-img" id="web-img"
+					style="height: 150px; background: url(./assets/graphi.jpeg) no-repeat; background-position: center; background-size: cover;">
+						<div style="width: 100%; height: 100%; background: black; opacity: .3;"></div>
+					</div>
+					<div class="grid-text">
+						<h5 class="servicename">Graphic Design</h5>
+						<p class="servicedesc">We offer a wide range of graphic design services from logos to banners and animations</p>
+						<a href="services.html">Learn more</a>
+					</div>
+					
+				</div>
+			</div>
+
+		
+		</div>
+	</section>
+
+	<section id="about">
+		<div class="container">
+			<h3 class="topic">About us</h3>
+			<div class="blackline" id="aboutline"></div>
+			<p class="servicedesc">BoyeSpace is a creative digital agency situated in Lagos, Nigeria. We specialise in Mobile & Web Application development, Design & Branding and general IT consultancy. 
+			We make use of the best practices to serve our clients in Mobile and Web Application development, aesthetic designs and we do all these with the end users in mind</p>
+			<a href="services.html">Learn more</a>
+			
+		</div>
+	</section>
+	<section class="socials">
+		<div class="container">
+			<ul class="social-list">
+				<li id="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+				<li id="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+				<li id="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+				<li id="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+			</ul>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<p>Copyright &copy; 2018 - All rights reserved | Boye Designs</p>
+
+		</div>
+	</footer>
+
+	<script>
+		$(document).ready(function(){
+			$('.icon').click(function(){
+				$('.nav-item-mobile').toggle(800);
+			});
+			$(window).on('scroll', function(){
+				if($(window).scrollTop()){
+					$('nav.topnav').addClass('fixed');
+				}
+				else{
+					$('nav.topnav').removeClass('fixed');
+				}
+			});
+		});
+	</script>
 </body>
 </html>

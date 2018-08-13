@@ -1,0 +1,35 @@
+
+section.services{
+	height: 90vh;
+	width: 100%;
+	margin-top: 7vh;
+	background: #f8f8f8;
+}
+
+section.services div.services-grid{
+	height: 45vh;
+	width: 50%;
+	background: blue;
+	float: left;
+}
+section.services div.services-grid span{
+	height: 100%;
+	width: 100%;
+	background: black;
+	opacity: .7;
+	text-align: center;
+	display: none;
+}
+
+section.services div.web-services{
+	background: green;
+}
+section.services div.mobile-services{
+	background: red;
+}
+section.services div.seo-services{
+	background: magenta;
+}
+section.services div.design-services{
+	background: #7f7f7f;
+}
