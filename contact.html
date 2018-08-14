@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BoyeSpace | Contact</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script type="text/javascript" src="jquery-min-3.0.0.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
+	<link rel="stylesheet" type="text/css" href="./css/contact.css">
+</head>
+<body>
+	<header>
+		<nav class="topnav fixed">
+				<div class="branding">
+					<a href="index.html"><h2><span id="highlight">BOYE</span><span id="boldhighlight">SPACE</span></h2></a>
+				</div>
+				<ul class="topnav" id="myTopnav">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="services.html">SERVICES</a></li>
+					<li class="current"><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</nav>
+			<nav class="mobilenav">
+				<div class="container">
+					<a href="javascript:void(0);" class="icon">
+					    <i class="fa fa-bars"></i>
+					 </a>
+					<ul >
+						<li><div class="branding">
+						<a href="index.html"><h3><span id="highlight">BOYE</span><span id="boldhighlight">SPACE</span></h3></a>
+						</div></li>
+						<li class="nav-item-mobile"><hr></li>
+						<li class="nav-item-mobile"><a href="index.html">HOME</a></li>
+						<li class="nav-item-mobile"><a href="about.html">ABOUT</a></li>
+						<li class="nav-item-mobile"><a href="services.html">SERVICES</a></li>
+						<li class="nav-item-mobile"><a href="contact.html">CONTACT</a></li>
+					</ul>
+				</div>
+			</nav>
+	</header>
+
+			<section class="contact-section">
+				<div class="contact-overlay"></div>
+					<div class="container" id="contact-container">
+						<div class="contact-content">
+							<div class="reach-to-us">
+								<h2>Contact us</h2>
+								<form class="contact-form">
+						
+									<input type="text" name="name" placeholder="Name">
+									<input type="email" name="email" placeholder="Email">
+									<textarea id="message" placeholder="Leave a message"></textarea><br>
+									<input id="submit" type="submit" name="submit" value="Submit">
+								</form>
+							</div>
+							
+							<section class="socials-contact">
+								<h3>Socials</h3>
+								<ul class="social-list">
+									<li id="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+									<li id="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+									<li id="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+									<li id="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+								</ul>
+							</section>
+						</div>
+					</div>
+				
+			</section>
+	
+	<script>
+		$(document).ready(function(){
+			$('.icon').click(function(){
+				$('.nav-item-mobile').toggle(800);
+			});
+
+			/*$('input').click(function(){
+				$(this).css('background', 'none');
+			}); */
+		});
+	</script>
+</body>
+</html>

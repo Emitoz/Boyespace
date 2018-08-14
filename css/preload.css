@@ -1,0 +1,36 @@
+
+@font-face{
+	font-family: ExtraBold;
+	src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+.preload {
+	background: #0b0b0b;
+	width: 100%;
+	height: 100vh;
+	padding: 0;
+	overflow: hidden;
+	font-family: ExtraBold;
+}
+
+.loading-page{
+	background: #161616;
+	width: 100%;
+	height: 100%;
+}
+
+.loading-page .counter h1{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: grey;
+	font-size: 260px;
+	font-weight: bolder;
+	margin-top: -10px
+}
+
+@media screen and (max-width: 600px){
+	.loading-page .counter h1{
+		font-size: 100px
+	}
+}
