@@ -15,6 +15,7 @@
 <body>
 	<header>
 		<nav class="topnav">
+			<div class="container">
 				<div class="branding">
 					<a href="index.html"><h2><span id="highlight">BOYE</span><span id="boldhighlight">SPACE</span></h2></a>
 				</div>
@@ -24,6 +25,8 @@
 					<li class="current" ><a href="services.html">SERVICES</a></li>
 					<li><a href="contact.html">CONTACT</a></li>
 				</ul>
+			</div>
+				
 			</nav>
 
 			<nav class="mobilenav">
@@ -45,26 +48,36 @@
 			</nav>			
 	</header>
 	<section class="services">
-		<div class="services-grid web-services">
-			<span class="film">
+		<div class="container">
+			<div class="services-grid web-services">	
 				<h2>Web</h2>
-			</span>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+				</p>
+				<button class="text-toggle"><p id="more">Show more</p><p id="less">Show less</p></button>
+				<div class="more-text">
+				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+
+				
+			</div>
+			<div class="services-grid mobile-services">
+				<span class="film">
+					<h2>Mobile</h2>
+				</span>
+			</div>
+			<div class="services-grid seo-services">
+				<span class="film">
+					<h2>seo</h2>
+				</span>
+			</div>
+			<div class="services-grid design-services">
+				<span class="film">
+					<h2>Design</h2>
+				</span>
+			</div>
 		</div>
-		<div class="services-grid mobile-services">
-			<span class="film">
-				<h2>Mobile</h2>
-			</span>
-		</div>
-		<div class="services-grid seo-services">
-			<span class="film">
-				<h2>seo</h2>
-			</span>
-		</div>
-		<div class="services-grid design-services">
-			<span class="film">
-				<h2>Design</h2>
-			</span>
-		</div>
+		
 	</section>
 
 	<script>
@@ -72,11 +85,14 @@
 			$('.icon').click(function(){
 				$('.nav-item-mobile').toggle(800);
 			});
-
-			$('.services-grid').hover(function(){
-				$('span.film').toggle();
+			$('.text-toggle').click(function(){
+				$('#less').toggle(300);
+				$('#more').toggle(300);
+				$('.more-text').toggle(600);
 			});
+			
 		});
 	</script>
+	
 </body>
 </html>

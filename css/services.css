@@ -1,35 +1,49 @@
 
+
 section.services{
-	height: 90vh;
 	width: 100%;
 	margin-top: 7vh;
 	background: #f8f8f8;
 }
-
 section.services div.services-grid{
-	height: 45vh;
-	width: 50%;
-	background: blue;
+	width: 25%;
 	float: left;
-}
-section.services div.services-grid span{
-	height: 100%;
-	width: 100%;
-	background: black;
-	opacity: .7;
 	text-align: center;
-	display: none;
 }
 
 section.services div.web-services{
-	background: green;
+	background: #a7a7f8;
 }
 section.services div.mobile-services{
-	background: red;
+	background: #24e4e4;
 }
 section.services div.seo-services{
-	background: magenta;
+	background: #6BD6EB
 }
-section.services div.design-services{
-	background: #7f7f7f;
+
+section.services div.services-grid button{
+	width: 100%;
+	border: none;
+	padding-top: 10px;
+}
+
+section.services div.services-grid div.more-text{
+	display: none;
+}
+section.services div.services-grid button #less{
+	display: none;
+}
+
+
+
+@media screen and (max-width: 768px){
+	section.services{
+		width: 100%;
+		margin-top: 0px;
+	}
+	section.services div.services-grid{
+		float: none;
+		width: 100%;
+		margin: 0;
+	}
 }
