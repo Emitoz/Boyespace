@@ -30,7 +30,7 @@ section.services div.services-grid button{
 section.services div.services-grid div.more-text{
 	display: none;
 }
-section.services div.services-grid button #less{
+section.services div.services-grid button .less{
 	display: none;
 }
 

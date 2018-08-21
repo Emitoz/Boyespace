@@ -54,7 +54,7 @@
 				<p>
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 				</p>
-				<button class="text-toggle"><p id="more">Show more</p><p id="less">Show less</p></button>
+				<button class="text-toggle"><p class="more">Show more</p><p class="less">Show less</p></button>
 				<div class="more-text">
 				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 				</div>
@@ -86,8 +86,8 @@
 				$('.nav-item-mobile').toggle(800);
 			});
 			$('.text-toggle').click(function(){
-				$('#less').toggle(300);
-				$('#more').toggle(300);
+				$('.less').toggle(300);
+				$('.more').toggle(300);
 				$('.more-text').toggle(600);
 			});
 			
