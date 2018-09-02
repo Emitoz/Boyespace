@@ -25,7 +25,8 @@ section.services div.services-grid button{
 	width: 100%;
 	border: none;
 	padding-top: 10px;
-	margin: 5px
+	background: none;
+	color: white;
 }
 
 section.services div.services-grid div.more-text{
