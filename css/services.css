@@ -9,16 +9,33 @@ section.services div.services-grid{
 	width: 25%;
 	float: left;
 	text-align: center;
+	color: white;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
 }
 
 section.services div.web-services{
-	background: #a7a7f8;
+	background: url(../assets/newweb.jpg);
+	background-size: cover;
+	background-position: center;
 }
 section.services div.mobile-services{
-	background: #24e4e4;
+	background: url(../assets/newmobile.jpg);
+	background-size: cover;
+	background-position: center;
 }
 section.services div.seo-services{
-	background: #6BD6EB
+	background: url(../assets/seo.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+section.services div.design-services{
+	background: url(../assets/design.jpeg);
+	background-size: cover;
+	background-position: center;
 }
 
 section.services div.services-grid button{
@@ -27,6 +44,24 @@ section.services div.services-grid button{
 	padding-top: 10px;
 	background: none;
 	color: white;
+	border: 1px solid white;
+	border-radius: 4px;
+	transition: .6s;
+}
+
+section.services div.services-grid button:hover{
+	background: #0078ff;
+	border: 1px solid #0078ff;
+}
+
+section.services div.services-grid h2{
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: ExtraBold;
+}
+section.services div.services-grid p{
+	font-size: 14px;
+	line-height: 30px;
 }
 
 section.services div.services-grid div.more-text{
