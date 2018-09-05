@@ -6,26 +6,78 @@ section.services{
 	background: #f8f8f8;
 }
 section.services div.services-grid{
-	width: 50%;
+	width: 25%;
 	float: left;
-	text-align: justify;
+	text-align: center;
+	color: white;
+	position: relative;
 }
 
 section.services div.web-services{
-	background: #a7a7f8;
+	background: url(../assets/newweb.jpg);
+	background-size: cover;
+	background-position: center;
 }
 section.services div.mobile-services{
-	background: #24e4e4;
+	background: url(../assets/newmobile.jpg);
+	background-size: cover;
+	background-position: center;
 }
 section.services div.seo-services{
-	background: #6BD6EB
+	background: url(../assets/seo.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+section.services div.design-services{
+	background: url(../assets/design.jpeg);
+	background-size: cover;
+	background-position: center;
+}
+
+section.services div.services-grid div.filmOver{
+	width: 100%;
+	height: 100%;
+	background: black;
+	opacity: .7;	
+	margin: 0;
+	display: none;
+}
+section.services div.services-grid .services-content{
+	width: 100%;
+	height: 100%;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: justify;
+	background: rgba(0,0,0,0.6);
 }
 
 section.services div.services-grid button{
-	width: 50%;
+	width: 100%;
 	border: none;
 	padding-top: 10px;
 	padding-bottom: 0;
+	background: none;
+	color: white;
+	border: 1px solid white;
+	border-radius: 4px;
+	transition: .6s;
+}
+
+section.services div.services-grid button:hover{
+	background: #0078ff;
+	border: 1px solid #0078ff;
+}
+
+section.services div.services-grid h2{
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: ExtraBold;
+}
+section.services div.services-grid p{
+	font-size: 14px;
+	line-height: 30px;
 }
 
 section.services div.services-grid div.more-text{
@@ -36,15 +88,19 @@ section.services div.services-grid button .less{
 }
 
 
-
 @media screen and (max-width: 768px){
 	section.services{
 		width: 100%;
 		margin-top: 0px;
+		top: 0;
 	}
 	section.services div.services-grid{
 		float: none;
 		width: 100%;
 		margin: 0;
+	}
+	section.services div.services-grid button{
+		width: 60%;
+		align-self: center;
 	}
 }

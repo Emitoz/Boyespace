@@ -48,38 +48,45 @@
 			</nav>			
 	</header>
 	<section class="services">
-		<div class="container">
-			<div class="services-grid web-services">	
-				<h2>Web</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-				</p>
-				<button class="text-toggle"><p class="more">Show more</p><p class="less">Show less</p></button>
-				<div class="more-text">
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				</div>
-
-				
+		<div>
+			<div class="services-grid web-services">
+				<div class="filmOver"></div>
+				<div class="services-content">
+					<h2>Web Services</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+					</p>
+					<button class="text-toggle"><p class="more">Show more</p><p class="less">Show less</p></button>
+					<div class="more-text">
+					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
+				</div>					
 			</div>
 			<div class="services-grid mobile-services">	
-				<h2>Mobile</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-				</p>
-				<button class="text-toggle"><p class="more">Show more</p><p class="less">Show less</p></button>
-				<div class="more-text">
-				  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+				<div class="filmOver"></div>
+				<div class="services-content">
+					<h2>Mobile</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+					</p>
+					<button class="text-toggle"><p class="more">Show more</p><p class="less">Show less</p></button>
+					<div class="more-text">
+					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
 				</div>
 			</div>
 			<div class="services-grid seo-services">
-				<span class="film">
+				<div class="filmOver"></div>
+				<div class="services-content">
 					<h2>seo</h2>
-				</span>
+				</div>
+				
 			</div>
 			<div class="services-grid design-services">
-				<span class="film">
+				<div class="filmOver"></div>
+				<div class="services-content">
 					<h2>Design</h2>
-				</span>
+				</div>
 			</div>
 		</div>
 		
@@ -95,13 +102,6 @@
 				$('.more').toggle(300);
 				$('.more-text').toggle(600);
 			});
-
-			if ($(window).css('max-width', '768px')) {
-				$('section.services .container').addClass('container');
-			}
-			else{
-				$('section.services .container').removeClass('container');
-			}
 			
 		});
 	</script>
