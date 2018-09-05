@@ -95,6 +95,13 @@
 				$('.more').toggle(300);
 				$('.more-text').toggle(600);
 			});
+
+			if ($(window).css('max-width', '768px')) {
+				$('section.services .container').addClass('container');
+			}
+			else{
+				$('section.services .container').removeClass('container');
+			}
 			
 		});
 	</script>

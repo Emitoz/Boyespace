@@ -6,9 +6,9 @@ section.services{
 	background: #f8f8f8;
 }
 section.services div.services-grid{
-	width: 25%;
+	width: 50%;
 	float: left;
-	text-align: center;
+	text-align: justify;
 }
 
 section.services div.web-services{
@@ -22,10 +22,10 @@ section.services div.seo-services{
 }
 
 section.services div.services-grid button{
-	width: 100%;
+	width: 50%;
 	border: none;
 	padding-top: 10px;
-	margin: 5px
+	padding-bottom: 0;
 }
 
 section.services div.services-grid div.more-text{
