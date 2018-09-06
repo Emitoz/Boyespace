@@ -50,42 +50,52 @@
 	<section class="services">
 		<div>
 			<div class="services-grid web-services">
-				<div class="filmOver"></div>
-				<div class="services-content">
+				<div class="container services-content">
 					<h2>Web Services</h2>
-					<p>
+					<p class="services-content-desc">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 					</p>
-					<button class="text-toggle"><p class="more">Show more</p><p class="less">Show less</p></button>
-					<div class="more-text">
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<button class="text-toggle web-toggle"><p class="more web-more">Show more</p><p class="less web-less">Show less</p></button>
+					<div class="more-text web-more-text">
+					  <p class="services-content-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
 				</div>					
 			</div>
 			<div class="services-grid mobile-services">	
-				<div class="filmOver"></div>
-				<div class="services-content">
+				<div class="container services-content">
 					<h2>Mobile</h2>
-					<p>
+					<p class="services-content-desc">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
 					</p>
-					<button class="text-toggle"><p class="more">Show more</p><p class="less">Show less</p></button>
-					<div class="more-text">
-					  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<button class="text-toggle mobile-toggle"><p class="more mobile-more">Show more</p><p class="less mobile-less">Show less</p></button>
+					<div class="more-text mobile-more-text">
+					  <p class="services-content-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 					</div>
 				</div>
 			</div>
 			<div class="services-grid seo-services">
-				<div class="filmOver"></div>
-				<div class="services-content">
+				<div class="container services-content">
 					<h2>seo</h2>
+					<p class="services-content-desc">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+					</p>
+					<button class="text-toggle seo-toggle"><p class="more seo-more">Show more</p><p class="less seo-less">Show less</p></button>
+					<div class="more-text seo-more-text">
+					  <p class="services-content-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
 				</div>
 				
 			</div>
 			<div class="services-grid design-services">
-				<div class="filmOver"></div>
-				<div class="services-content">
+				<div class="container services-content">
 					<h2>Design</h2>
+					<p class="services-content-desc">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+					</p>
+					<button class="text-toggle design-toggle"><p class="more design-more">Show more</p><p class="less design-less">Show less</p></button>
+					<div class="more-text design-more-text">
+					  <p class="services-content-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -97,10 +107,25 @@
 			$('.icon').click(function(){
 				$('.nav-item-mobile').toggle(800);
 			});
-			$('.text-toggle').click(function(){
-				$('.less').toggle(300);
-				$('.more').toggle(300);
-				$('.more-text').toggle(600);
+			$('.web-toggle').click(function(){
+				$('.web-less').toggle(300);
+				$('.web-more').toggle(300);
+				$('.web-more-text').toggle(600);
+			});
+			$('.mobile-toggle').click(function(){
+				$('.mobile-less').toggle(300);
+				$('.mobile-more').toggle(300);
+				$('.mobile-more-text').toggle(600);
+			});
+			$('.seo-toggle').click(function(){
+				$('.seo-less').toggle(300);
+				$('.seo-more').toggle(300);
+				$('.seo-more-text').toggle(600);
+			});
+			$('.design-toggle').click(function(){
+				$('.design-less').toggle(300);
+				$('.design-more').toggle(300);
+				$('.design-more-text').toggle(600);
 			});
 			
 		});

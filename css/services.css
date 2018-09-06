@@ -42,15 +42,13 @@ section.services div.services-grid div.filmOver{
 	margin: 0;
 	display: none;
 }
-section.services div.services-grid .services-content{
+section.services div.services-grid div.services-content{
 	width: 100%;
 	height: 100%;
 	padding-top: 30px;
 	padding-bottom: 20px;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-align: justify;
-	background: rgba(0,0,0,0.6);
+	text-align: center;
+	background: rgba(0,0,0,0.8);
 }
 
 section.services div.services-grid button{
@@ -76,8 +74,12 @@ section.services div.services-grid h2{
 	font-family: ExtraBold;
 }
 section.services div.services-grid p{
-	font-size: 14px;
-	line-height: 30px;
+	font-size: 12px;
+}
+section.services div.services-grid p.services-content-desc{
+	line-height: 20px;
+	margin-top: 20px;
+	font-weight: normal;
 }
 
 section.services div.services-grid div.more-text{
