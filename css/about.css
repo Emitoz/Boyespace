@@ -1,0 +1,28 @@
+section.about-showcase{
+	width: 100%;
+	height: 50vh;
+	background: url(../assets/about.jpeg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+section.about-showcase div.about-showcase-content{
+	background: rgba(0,0,0,.5);
+	height: 100%;
+	width: 100%;
+	margin-top: 10vh;
+	padding-top: 20vh;
+}
+section.about-showcase div.about-showcase-content h2{
+	color: white;
+	font-size: 40px;
+	font-weight: bolder;
+	font-family: ExtraBold;
+	text-transform: uppercase;
+}
+section.about-showcase div.about-showcase-content div.underline{
+	height: 6px;
+	width: 60px;
+	background: white;
+	margin-top: 10px; 
+}
