@@ -495,13 +495,13 @@ footer {
 
 
 	section.socials li{
-	list-style: none;
-	font-size: 15px;
-	margin: 10px 5px;
-	padding: 5px 9px;
-	border-radius: 50%;
-	display: inline-block;
-	transition: .5s;
+		list-style: none;
+		font-size: 15px;
+		margin: 10px 5px;
+		padding: 5px 9px;
+		border-radius: 50%;
+		display: inline-block;
+		transition: .5s;
 	}
 
 	section.socials li#facebook{

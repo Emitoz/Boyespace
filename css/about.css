@@ -4,13 +4,14 @@ section.about-showcase{
 	background: url(../assets/about.jpeg) no-repeat;
 	background-size: cover;
 	background-position: center;
+	margin-top: 10vh;
 }
 
 section.about-showcase div.about-showcase-content{
 	background: rgba(0,0,0,.5);
 	height: 100%;
 	width: 100%;
-	margin-top: 10vh;
+
 	padding-top: 20vh;
 }
 section.about-showcase div.about-showcase-content h2{
@@ -25,4 +26,18 @@ section.about-showcase div.about-showcase-content div.underline{
 	width: 60px;
 	background: white;
 	margin-top: 10px; 
+}
+
+
+@media screen and (max-width: 768px){
+	section.about-showcase{
+		margin-top: 0px
+	}
+	section.about-showcase div.about-showcase-content h2{
+		font-size: 25px;
+	}
+	section.about-showcase div.about-showcase-content div.underline{
+		height: 4px;
+		width: 40px;
+	}
 }
