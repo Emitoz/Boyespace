@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script type="text/javascript" src="jquery-min-3.0.0.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	
 </head>
@@ -50,7 +51,7 @@
 			</nav>
 	</header>
 
-	<section class="showcase" id="homeshowcase">
+	<section class="showcase anim" id="homeshowcase">
 		<!--<div class="filmOverlay"></div>
 		<button id="explore">Explore</button> -->
 		<slider>
@@ -60,7 +61,7 @@
 			<slide><div class="filmOverlay"></div><p class="slideText">we're timely</p></slide>
 		</slider>
 
-		<button id="explore">Explore</button>
+		<button class="anim" id="explore">Explore</button>
 	</section>
 	<section class="services">
 		<div class="container">
@@ -68,7 +69,7 @@
 			<div class="blackline"></div>
 
 			<div class="closegrids">
-				<div class="grid">
+				<div class="grid anim">
 					<div class="top-img" id="web-img"
 					style="height: 150px; background: url(./assets/web1.jpg) no-repeat; background-position: center; background-size: cover;">
 						<div style="width: 100%; height: 100%; background: black; opacity: .3;"></div>
@@ -80,7 +81,7 @@
 					</div>
 					
 				</div>
-				<div class="grid">
+				<div class="grid anim">
 					<div class="top-img" id="web-img"
 					style="height: 150px; background: url(./assets/mobile.jpg) no-repeat; background-position: center; background-size: cover;">
 						<div style="width: 100%; height: 100%; background: black; opacity: .3;"></div>
@@ -92,7 +93,7 @@
 					</div>
 					
 				</div>
-				<div class="grid">
+				<div class="grid anim">
 					<div class="top-img" id="web-img"
 					style="height: 150px; background: url(./assets/graphi.jpeg) no-repeat; background-position: center; background-size: cover;">
 						<div style="width: 100%; height: 100%; background: black; opacity: .3;"></div>
@@ -110,8 +111,8 @@
 		</div>
 	</section>
 
-	<section class="about">
-		<div class="container">
+	<section class="about anim">
+		<div class="container anim">
 			<h3 class="topic">About us</h3>
 			<div class="blackline aboutline"></div>
 			<p class="servicedesc">BoyeSpace is a creative digital agency situated in Lagos, Nigeria. We specialise in Mobile & Web Application development, Design & Branding and general IT consultancy. 
@@ -119,9 +120,9 @@
 			<a href="about.html">Learn more</a>	
 		</div>
 	</section>
-	<section class="socials">
+	<section class="socials anim">
 		<div class="container">
-			<ul class="social-list">
+			<ul class="social-list anim">
 				<li id="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
 				<li id="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></li>
 				<li id="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></li>
@@ -160,6 +161,10 @@
 				}
 			});
 		});
+	</script>
+	<script type="text/javascript">
+		window.sr = ScrollReveal();
+		sr.reveal('.anim');
 	</script>
 
 </body>

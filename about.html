@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<link rel="stylesheet" type="text/css" href="./css/about.css">
 </head>
@@ -45,15 +46,15 @@
 
 			</nav>
 	</header>
-	<section class="about-showcase">
+	<section class="about-showcase anim">
 		<div class="about-showcase-content">
-			<div class="container">
+			<div class="container anim">
 				<h2>ABOUT US</h2>
 				<div class="underline"></div>
 			</div>
 		</div>
 	</section>
-	<section class="about aboutpage">
+	<section class="about aboutpage anim">
 		<div class="container">
 			<h3 class="topic">About us</h3>
 			<div class="blackline aboutline"></div>
@@ -63,21 +64,21 @@
 	</section>
 	<section class="about aboutpage-process">
 		<div class="container">
-			<h3 class="topic">Our process</h3>
-			<div class="blackline aboutline"></div>
-			<div class="grid aboutprocess-grid">
+			<h3 class="topic anim">Our process</h3>
+			<div class="blackline aboutline anim"></div>
+			<div class="grid aboutprocess-grid anim">
 				<div class="grid-text aboutgrid-text">
 					<h5  class="servicename">We innovate</h5>
 					<p class="servicedesc">In serving our clients, we use unique unorthodoxed methods to create solutions for them so as to enable the stand out from the rest, and this in a way to help them attain maximum profits</p>
 				</div>
 			</div>
-			<div class="grid aboutprocess-grid">
+			<div class="grid aboutprocess-grid anim">
 				<div class="grid-text aboutgrid-text">
 					<h5  class="servicename">We strategize</h5>
 					<p class="servicedesc">In serving our clients, we use unique unorthodoxed methods to create solutions for them so as to enable the stand out from the rest, and this in a way to help them attain maximum profits</p>
 				</div>
 			</div>
-			<div class="grid aboutprocess-grid">
+			<div class="grid aboutprocess-grid anim">
 				<div class="grid-text aboutgrid-text">
 					<h5  class="servicename">Everything design</h5>
 					<p class="servicedesc">In serving our clients, we use unique unorthodoxed methods to create solutions for them so as to enable the stand out from the rest, and this in a way to help them attain maximum profits</p>
@@ -85,7 +86,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="socials">
+	<section class="socials anim">
 		<div class="container">
 			<ul class="social-list">
 				<li id="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
@@ -96,7 +97,7 @@
 		</div>
 	</section>
 	<footer>
-		<div class="container">
+		<div class="container anim">
 			<p>Copyright &copy; 2018 - All rights reserved | Boye Designs</p>
 
 		</div>
@@ -116,6 +117,10 @@
 				}
 			});
 		});
+	</script>
+	<script type="text/javascript">
+		window.sr = ScrollReveal();
+		sr.reveal('.anim');
 	</script>
 
 </body>

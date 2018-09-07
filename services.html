@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<script type="text/javascript" src="jquery-min-3.0.0.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.js"></script>
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<link rel="stylesheet" type="text/css" href="./css/services.css">
 </head>
@@ -47,14 +48,10 @@
 				</div>
 			</nav>			
 	</header>
-	<section class="services">
+	<section class="services anim">
 		<div>
 			<div class="services-grid web-services">
-				<div class="container services-content">
-					<!--<div class="circle-image">
-						<img src="assets/whiteweb.png">
-					</div> -->
-					
+				<div class="container services-content anim">
 					<h2>Web Services</h2>
 					<p class="services-content-desc">
 						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
@@ -65,7 +62,7 @@
 					</div>
 				</div>					
 			</div>
-			<div class="services-grid mobile-services">	
+			<div class="services-grid mobile-services anim">	
 				<div class="container services-content">
 					<h2>Mobile</h2>
 					<p class="services-content-desc">
@@ -77,7 +74,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="services-grid seo-services">
+			<div class="services-grid seo-services anim">
 				<div class="container services-content">
 					<h2>seo</h2>
 					<p class="services-content-desc">
@@ -90,7 +87,7 @@
 				</div>
 				
 			</div>
-			<div class="services-grid design-services">
+			<div class="services-grid design-services anim">
 				<div class="container services-content">
 					<h2>Design</h2>
 					<p class="services-content-desc">
@@ -147,6 +144,10 @@
 			});
 			
 		});
+	</script>
+	<script type="text/javascript">
+		window.sr = ScrollReveal();
+		sr.reveal('.anim');
 	</script>
 	
 </body>
