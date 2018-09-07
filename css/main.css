@@ -360,20 +360,20 @@ section.services{
 	text-align: center;
 }
 
-#about {
+.about {
 	padding-top: 20px;
 	text-align: center;
 	background: #ececec;
 	padding-bottom: 20px;
 }
 
-#about .container{
+.about .container{
 	letter-spacing: 1px;
 	font-size: 14px;
 	text-align: justify;
 }
 
-#aboutline{
+.aboutline{
 	margin-bottom: 10px
 }
 
@@ -389,7 +389,7 @@ section.socials li{
 	padding: 8px 14px;
 	border-radius: 50%;
 	display: inline-block;
-	transition: .5s;
+	transition: .7s;
 }
 section.socials li#facebook{
 		margin-left: 0px;
@@ -473,7 +473,7 @@ footer {
 		font-weight: bold;
 	}
 
-	section#about p.servicedesc{
+	section.about p.servicedesc, section.about a{
 		font-size: 12px;
 		text-align: justify;
 	}

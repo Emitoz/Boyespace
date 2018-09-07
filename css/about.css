@@ -28,6 +28,10 @@ section.about-showcase div.about-showcase-content div.underline{
 	margin-top: 10px; 
 }
 
+.aboutprocess-grid{
+	
+}
+
 
 @media screen and (max-width: 768px){
 	section.about-showcase{

@@ -53,12 +53,55 @@
 			</div>
 		</div>
 	</section>
-	
+	<section class="about">
+		<div class="container">
+			<h3 class="topic">About us</h3>
+			<div class="blackline aboutline"></div>
+			<p class="servicedesc">BoyeSpace is a creative digital agency situated in Lagos, Nigeria. We specialise in Mobile & Web Application development, Design & Branding and general IT consultancy. 
+			We make use of the best practices to serve our clients in Mobile and Web Application development, aesthetic designs and we do all these with the end users in mind</p>
+		</div>
+	</section>
+	<section class="about">
+		<div class="container">
+			<h3 class="topic">Our process</h3>
+			<div class="blackline aboutline"></div>
+			<div class="grid aboutprocess-grid">
+				<div class="grid-text">
+					<h5  class="servicename">We innovate</h5>
+					<p class="servicedesc">In serving our clients, we use unique unorthodoxed methods to create solutions for them so as to enable the stand out from the rest, and this in a way to help them attain maximum profits</p>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="socials">
+		<div class="container">
+			<ul class="social-list">
+				<li id="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+				<li id="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></li>
+				<li id="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+				<li id="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+			</ul>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<p>Copyright &copy; 2018 - All rights reserved | Boye Designs</p>
+
+		</div>
+	</footer>
 
 	<script>
 		$(document).ready(function(){
 			$('.icon').click(function(){
 				$('.nav-item-mobile').toggle(800);
+			});
+			$(window).on('scroll', function(){
+				if($(window).scrollTop()){
+					$('nav.topnav').addClass('fixed');
+				}
+				else{
+					$('nav.topnav').removeClass('fixed');
+				}
 			});
 		});
 	</script>
