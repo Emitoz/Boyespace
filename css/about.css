@@ -7,6 +7,10 @@ section.about-showcase{
 	margin-top: 10vh;
 }
 
+.aboutpage{
+	background: #f9f9f9;
+}
+
 section.about-showcase div.about-showcase-content{
 	background: rgba(0,0,0,.5);
 	height: 100%;
@@ -29,6 +33,8 @@ section.about-showcase div.about-showcase-content div.underline{
 }
 .aboutprocess-grid{
 	border-left: 3px solid #37abbd;
+	margin: 20px;
+	width: 28%;
 }
 
 
@@ -42,5 +48,8 @@ section.about-showcase div.about-showcase-content div.underline{
 	section.about-showcase div.about-showcase-content div.underline{
 		height: 4px;
 		width: 40px;
+	}
+	.aboutprocess-grid{
+		width: 100%
 	}
 }
