@@ -27,9 +27,8 @@ section.about-showcase div.about-showcase-content div.underline{
 	background: white;
 	margin-top: 10px; 
 }
-
 .aboutprocess-grid{
-	
+	border-left: 3px solid #37abbd;
 }
 
 
