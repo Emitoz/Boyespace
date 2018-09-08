@@ -378,7 +378,7 @@ section.services{
 }
 
 section.choose{
-	margin-bottom: 40px;
+	
 }
 section.choose div.choose-img{
 	width: 50%;
@@ -592,6 +592,18 @@ footer {
 		margin-bottom: 0px;
 	}
 
+	.choose-text{
+		width: 90%;
+		margin-left: 5%;
+		margin-right: 5%; 
+	}
+
+	section.choose h2{
+		font-size: 15px;
+	}
+	section.choose p, section.choose li{
+		font-size: 12px;
+	}
 
 	section.socials li{
 		list-style: none;
