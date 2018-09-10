@@ -37,6 +37,10 @@ section.about-showcase div.about-showcase-content div.underline{
 	width: 28%;
 }
 
+.aboutprocess-grid h5.servicename{
+	text-align: center;
+}
+
 
 @media screen and (max-width: 768px){
 	section.about-showcase{
