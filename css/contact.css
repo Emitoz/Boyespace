@@ -1,4 +1,7 @@
 
+/*
+Property of Boyespace 
+*/
 section.contact-section{
 	height: 90vh;
 	width: 100%;
@@ -155,6 +158,9 @@ footer.contact-info ul li p{
 	font-size: 14px;
 }
 
+/*
+Property of Boyespace 
+*/
 
 @media screen and (max-width: 768px){
 	
@@ -192,7 +198,10 @@ footer.contact-info ul li p{
 	section.contact-section  section.socials-contact li{
 	list-style: none;
 	font-size: 15px;
-	margin: 10px 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
 	padding: 5px 10px;
 	border-radius: 50%;
 	display: inline-block;
@@ -200,7 +209,7 @@ footer.contact-info ul li p{
 	}
 
 	section.contact-section section.socials-contact li#facebook{
-		margin-left: 0px;
+		margin-left: 0;
 	}	
 
 	form.contact-form input{
@@ -236,6 +245,39 @@ footer.contact-info ul li p{
 		text-transform: uppercase;
 		font-weight: bold;
 	}
+
+	footer.contact-info{
+		height: 100%;
+		padding: 20px 0px;
+	}
+	footer.contact-info ul li{
+		list-style: all;
+	}
+	footer.contact-info ul li{
+		transform: translateY(0);
+		margin: 0
+	}
+	footer.contact-info ul li.contact-icon{
+		margin-right: 0;
+		width: 100%;
+		font-size: 20px;
+	}
+	footer.contact-info ul li#phone{
+		margin-left: 0;
+	}
+	footer.contact-info ul li#phone-no{
+		margin-right: 0%;
+	}
+	footer.contact-info ul li.contact-detail{
+		margin-bottom: 15px;
+	}
+	footer.contact-info ul li#email{
+		margin-bottom: 0;
+	}
+	footer.contact-info ul li p{
+		font-size: 12px;
+	}
+
 }
 
 @media screen and (max-width: 400px){

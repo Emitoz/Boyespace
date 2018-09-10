@@ -1,3 +1,6 @@
+/*
+Property of Boyespace 
+*/
 @font-face{
 	font-family: ExtraLight;
 	src: url(../fonts/Raleway-ExtraLight.ttf);
@@ -514,7 +517,9 @@ footer {
 	font-size: 15px;
 }
 
-
+/*
+Property of Boyespace 
+*/
 @media screen and (max-width: 768px){
 
 	nav.mobilenav{
@@ -569,7 +574,7 @@ footer {
 	.grid{
 		width: 100%;
 		float: none;
-		margin-top: 20px;
+		margin-top: 20px, 0px;
 	}
 	.grid .servicename{
 		font-size: 13px;
