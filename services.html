@@ -51,7 +51,7 @@
 	<section class="services anim">
 		<div>
 			<div class="services-grid web-services">
-				<div class="container services-content anim">
+				<div class="services-content anim">
 					<h2>Web Services</h2>
 					<p class="services-content-desc">
 						We deliver solutions for all types of web design & development projects ranging from static websites to progressive web apps.
@@ -63,7 +63,7 @@
 				</div>					
 			</div>
 			<div class="services-grid mobile-services anim">	
-				<div class="container services-content">
+				<div class="services-content">
 					<h2>Mobile</h2>
 					<p class="services-content-desc">
 						Mobile applications usages are surging higher than ever and so are revenue from them. We can develop one or more for your business.
@@ -75,7 +75,7 @@
 				</div>
 			</div>
 			<div class="services-grid seo-services anim">
-				<div class="container services-content">
+				<div class="services-content">
 					<h2>seo</h2>
 					<p class="services-content-desc">
 						We offer search engine optimization services to give your business or corporate websites online presence it needs.
@@ -88,7 +88,7 @@
 				
 			</div>
 			<div class="services-grid design-services anim">
-				<div class="container services-content">
+				<div class="services-content">
 					<h2>Design</h2>
 					<p class="services-content-desc">
 						Pictures speak better than words. Let's give you that expression through our creative designs and branding services. You'll be glad.
@@ -105,6 +105,7 @@
 	<section class="content-servicepage anim">
 		<div class="container">
 			<h3 class="topic">Your go to quality service vendor</h3>
+			<div class="blackline aboutline"></div>
 			<p class="servicedesc"><strong>We're focused on delivering creative, sustainable and reliable solutions to our clients and we do this in the scheduled time frame. </strong>We do our best to make the solutions we create for you are seamless in operation as well as easy and fun to use. We also guarantee you:</p>
 			<ul>
 				<li><p>On schedule delivery</p></li>
@@ -137,6 +138,16 @@
 			$('.icon').click(function(){
 				$('.nav-item-mobile').toggle(800);
 			});
+			$(window).on('scroll', function(){
+				if($(window).scrollTop()){
+					$('nav.topnav').addClass('fixed');
+				}
+				else{
+					$('nav.topnav').removeClass('fixed');
+				}
+			});
+
+
 			$('.web-toggle').click(function(){
 				$('.web-less').toggle(300);
 				$('.web-more').toggle(300);

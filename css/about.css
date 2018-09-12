@@ -48,7 +48,7 @@ section.about-showcase div.about-showcase-content div.underline{
 Property of Boyespace 
 */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 980px){
 	section.about-showcase{
 		margin-top: 0px
 	}
