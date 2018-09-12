@@ -520,7 +520,7 @@ footer {
 /*
 Property of Boyespace 
 */
-@media screen and (max-width: 768px){
+@media screen and (max-width: 980px){
 
 	nav.mobilenav{
 		display: block;	
