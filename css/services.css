@@ -89,6 +89,7 @@ section.services div.services-grid p.services-content-desc{
 	line-height: 20px;
 	margin-top: 20px;
 	font-weight: normal;
+	text-align: justify;
 }
 
 section.services div.services-grid div.more-text{
@@ -107,6 +108,42 @@ section.content-servicepage p{
 	font-size: 14px;
 	line-height: 30px;
 }
+.services-content-list{
+	width: 100%;
+}
+.services-content-list div.services-content-image{
+	width: 50%;
+	float: left;
+	background: url(../assets/workservice.jpg) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.services-content-list div.services-content-image div.services-content-image-overlay{
+	background: rgba(0,0,0,.5);
+	height: 100%;
+	transition: .6s
+}
+.services-content-list div.services-content-image div.services-content-image-overlay:hover{
+	background: rgba(0,0,0,.8);
+}
+.services-content-list div.services-content-image ul{
+	opacity: 0;
+}
+.services-content-list div.services-content-ul{
+	width: 50%;
+	float: right;
+	background: #f9f9f9;
+}
+.services-content-list ul{
+	list-style: none;
+	padding: 10%;
+	padding-bottom: 10px;
+}
+.services-content-list ul p{
+	line-height: 20px;
+	color: #0e0e0e;
+}
+
 
 
 /*
