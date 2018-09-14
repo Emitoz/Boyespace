@@ -7,11 +7,16 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 	<script type="text/javascript" src="jquery-min-3.0.0.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.js"></script>
+	<script src="./js/jquery.nice-select.js"></script>
+	<script src="./js/jquery.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<link rel="stylesheet" type="text/css" href="./css/services.css">
+	<link rel="stylesheet" type="text/css" href="./css/nice-select.css">
 </head>
 <body>
 	<header>
@@ -108,7 +113,7 @@
 			<div class="blackline aboutline"></div>
 			<p class="servicedesc"><strong>We're focused on delivering creative, sustainable and reliable solutions to our clients and we do this in the scheduled time frame. </strong>We do our best to make the solutions we create for you are seamless in operation as well as easy and fun to use. We also guarantee you:</p>
 			<div class="services-content-list">
-				<div class="services-content-image"><div class="services-content-image-overlay">
+				<div class="services-content-image anim"><div class="services-content-image-overlay">
 					<ul>
 						<li><p>On schedule delivery</p></li>
 						<li><p>Transparent competitive prices</p></li>
@@ -116,7 +121,7 @@
 						<li><p>There's professionalism on every step of the project lifecycle</p></li>
 					</ul>
 				</div></div>
-				<div class="services-content-ul">
+				<div class="services-content-ul anim">
 					<ul>
 						<li><p>On schedule delivery</p></li>
 						<li><p>Transparent competitive prices</p></li>
@@ -133,24 +138,27 @@
 	<section class="reach-us-form anim">
 		<div class="container">
 			<h3 class="topic">Let us collaborate</h3>
-			<h5></h5>
-			<form>
-				<input type="text" name="name">
-				<input type="text" name="email">
-				<input type="text" name="phone">
-				<input type="text" name="website">
-				<h5>What's the project</h5>
-				<select>
-					<option>Design</option>
-					<option>Website</option>
-					<option>Mobile application</option>
-					<option>SEO services</option>
-					<option>Other</option>
-				</select>
-			</form>
+			<h5>You are a visionary who wants to impact your world through technology. You have that idea that can revolutionize the way businesses can be conducted. With our skills and your idea, let’s build you an outstanding product.</h5>
+			<div class="service-form container anim">
+				<form>
+					<input type="text" name="name">
+					<input type="text" name="email">
+					<input type="text" name="phone">
+					<input type="text" name="website">
+					<h5>What's the project</h5>
+					<select>
+						<option>Design</option>
+						<option>Website</option>
+						<option>Mobile application</option>
+						<option>SEO services</option>
+						<option>Other</option>
+					</select>
+				</form>
+			</div>
+			
 		</div>
 		
-		
+
 	</section>
 
 	<section class="socials">
@@ -212,6 +220,12 @@
 		window.sr = ScrollReveal();
 		sr.reveal('.anim');
 	</script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		  $('select').niceSelect();
+		});
+	</script>
+
 	
 </body>
 </html>

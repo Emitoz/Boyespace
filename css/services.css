@@ -101,6 +101,7 @@ section.services div.services-grid button .less{
 
 section.content-servicepage{
 	padding-top: 300px;
+	margin-bottom: 60px;
 }
 section.content-servicepage p{
 	color: #88888c;
@@ -144,6 +145,30 @@ section.content-servicepage p{
 	color: #0e0e0e;
 }
 
+section.reach-us-form {
+	background: #000;
+	color: white;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	height: 300px;
+}
+section.reach-us-form h5{
+	font-size: 15px;
+	text-align: center;
+	line-height: 30px;
+}
+section.reach-us-form div.service-form{
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	background: white;
+	padding: 30px;
+	border-radius: 4px;
+}
+section.reach-us-form div.service-form *{
+	width: 100%;
+}
+
 
 
 /*
@@ -175,11 +200,25 @@ Property of Boyespace
 		align-self: center;
 	}
 	section.content-servicepage{
-		padding-top: 30px;
+		padding-top: 60px;
 	}
 	section.content-servicepage p.servicedesc{
 		font-size: 12px;
 		text-align: justify;
+	}
+	.services-content-list div.services-content-image{
+		width: 100%;
+		height: 150px;
+		float: none;
+		margin-bottom: 0px;
+	}
+	.services-content-list div.services-content-ul{
+		width: 100%;
+		float: none;
+	}
+	.services-content-list div.services-content-ul ul p{
+		font-size: 12px;
+		text-align: center;
 	}
 }
 
