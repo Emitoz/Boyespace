@@ -1,6 +1,12 @@
 /*
 Property of Boyespace 
 */
+
+@import 'https://fonts.googleapis.com/css?family=Roboto:100,300';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.3.2/css/simple-line-icons.min.css';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:300,700';
+
 @font-face{
 	font-family: ExtraLight;
 	src: url(../fonts/Raleway-ExtraLight.ttf);
@@ -280,6 +286,7 @@ section#homeshowcase button{
 	transition: .6s;
 	font-size: 15px;
 	position: absolute;
+	cursor: pointer;
 }
 section#homeshowcase button:hover{
 	background: #37abbd;
@@ -476,6 +483,7 @@ section.socials{
 	text-align: center;
 	padding-top: 20px;
 	padding-top: 20px;
+	background: white;
 }
 section.socials li{
 	list-style: none;
@@ -485,6 +493,7 @@ section.socials li{
 	border-radius: 50%;
 	display: inline-block;
 	transition: .7s;
+	cursor: pointer;
 }
 section.socials li#facebook{
 		margin-left: 0px;
