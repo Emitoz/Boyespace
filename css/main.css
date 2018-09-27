@@ -120,21 +120,22 @@ nav.topnav ul li a:hover{
 	text-decoration: none;
 }
 
-//mobile
+
 
 
 
 nav.mobilenav{
-	top: 100px;
+	top: 0;
 	left: 0;
 	width: 100%;
-	height: 10vh;
 	position: fixed;
 	padding: 10px 100px;
 	box-sizing: border-box;
 	transition: .3s;
 	background: white;
 	z-index: 10;
+	padding: 0;
+	box-shadow: 0 1px 2px rgba(0,0,0,.1);
 }
 
 nav.mobilenav .icon{
@@ -162,6 +163,10 @@ nav.mobilenav ul li a {
 	font-size: 12px;
 	transition: .6s;
 	letter-spacing: 2px;
+}
+nav.mobilenav ul li a.current{
+	color: black;
+	font-family: bold;
 }
 nav.mobilenav ul li a:hover{
 	text-decoration: none;
@@ -485,39 +490,44 @@ section.socials{
 	padding-top: 20px;
 	background: white;
 }
+section.socials ul{
+	padding-left: 0;
+}
 section.socials li{
+	cursor: pointer;
 	list-style: none;
 	margin: 10px 30px;
-	font-size: 20px;
-	padding: 8px 14px;
-	border-radius: 50%;
 	display: inline-block;
-	transition: .7s;
-	cursor: pointer;
 }
-section.socials li#facebook{
+section.socials a{
+	font-size: 20px;
+	padding: 11px 14px;
+	border-radius: 50%;
+	transition: .7s;
+}
+section.socials a#facebook{
 		margin-left: 0px;
 		color: #4c69c7;
 		border: 1px solid #4c69c7;
 }
 
-section.socials li#twitter{
+section.socials a#twitter{
 	color: #2abeeb;
 	border: 1px solid #2abeeb;
 }
 
-section.socials li#instagram{
+section.socials a#instagram{
 	color: #e316a6;
 	border: 1px solid #e316a6;
 }
 
-section.socials li#linkedin{
+section.socials a#linkedin{
 	color: #007bc7;
 	border: 1px solid #007bc7;
 }
 
-section.socials li#facebook:hover,section.socials li#twitter:hover,
-section.socials li#instagram:hover,section.socials li#linkedin:hover{
+section.socials a#facebook:hover,section.socials a#twitter:hover,
+section.socials a#instagram:hover,section.socials a#linkedin:hover{
 	color: #292929;
 	border: 1px solid #292929;
 	transition: .5s;
@@ -534,6 +544,8 @@ footer {
 
 /*
 Property of Boyespace 
+
+Mobile style
 */
 @media screen and (max-width: 980px){
 
@@ -551,7 +563,7 @@ Property of Boyespace
 		background-size: cover;
 		background-position: center;
 		color: #fff;
-		margin-top: 0;
+		margin-top: 9vh;
 	}
 	slider p{
 		font-size: 25px;
@@ -625,12 +637,18 @@ Property of Boyespace
 
 	section.socials li{
 		list-style: none;
-		font-size: 15px;
 		margin: 10px 5px;
-		padding: 5px 9px;
-		border-radius: 50%;
 		display: inline-block;
+	}
+	section.socials a{
+		font-size: 15px;
+		padding: 7px 9px;
+		border-radius: 50%;
 		transition: .5s;
+	}
+	section.socials ul{
+		padding-left: 0px;
+		text-align: center;
 	}
 
 	section.socials li#facebook{

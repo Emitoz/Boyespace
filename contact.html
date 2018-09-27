@@ -41,7 +41,7 @@
 						<li class="nav-item-mobile"><a href="index.html">HOME</a></li>
 						<li class="nav-item-mobile"><a href="about.html">ABOUT</a></li>
 						<li class="nav-item-mobile"><a href="services.html">SERVICES</a></li>
-						<li class="nav-item-mobile"><a href="contact.html">CONTACT</a></li>
+						<li class="nav-item-mobile"><a class="current" href="contact.html">CONTACT</a></li>
 					</ul>
 				</div>
 			</nav>
@@ -57,7 +57,7 @@
 						
 									<input type="text" name="name" placeholder="Name">
 									<input type="email" name="email" placeholder="Email">
-									<textarea id="message" placeholder="Leave a message"></textarea><br>
+									<textarea id="message" placeholder="Leave a message" name="message"></textarea><br>
 									<input id="submit" type="submit" name="submit" value="Submit">
 								</form>
 							</div>
@@ -65,11 +65,11 @@
 							<section class="socials-contact">
 								<h3>Socials</h3>
 								<ul class="social-list">
-									<li id="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
-									<li id="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></li>
-									<li id="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-									<li id="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
-									<li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+									<li id="facebook"><a  id="facebook" href="https://fb.me/boyespace"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+									<li><a id="instagram" href="https://www.instagram.com/boye_space"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+									<li><a id="linkedin" href="https://www.linkedin.com/company/boyespace"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+									<li><a id="twitter" href="https://twitter.com/boye_space"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+									<li><a href="whatsapp://send?text=Hello BoyeSpace!&phone=+2348134225805"><i class="fa fa-whatsapp" aria-hidden="true"></i></a></li>
 								</ul>
 							</section>
 						</div>
@@ -91,7 +91,7 @@
 						<li class="contact-icon">
 							<i class="fa fa-envelope"></i>
 						</li>
-						<li class="contact-detail" id="email"><p>boyespace@outlook.com</p></li>
+						<li class="contact-detail" id="email"><p>boye_space@outlook.com</p></li>
 						
 					</ul>
 				</div>
@@ -100,7 +100,7 @@
 	<script>
 		$(document).ready(function(){
 			$('.icon').click(function(){
-				$('.nav-item-mobile').toggle(800);
+				$('.nav-item-mobile').toggle(600);
 			});
 
 		});

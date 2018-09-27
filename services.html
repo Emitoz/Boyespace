@@ -47,7 +47,7 @@
 						<li class="nav-item-mobile"><hr></li>
 						<li class="nav-item-mobile"><a href="index.html">HOME</a></li>
 						<li class="nav-item-mobile"><a href="about.html">ABOUT</a></li>
-						<li class="nav-item-mobile"><a href="services.html">SERVICES</a></li>
+						<li class="nav-item-mobile"><a class="current" href="services.html">SERVICES</a></li>
 						<li class="nav-item-mobile"><a href="contact.html">CONTACT</a></li>
 					</ul>
 				</div>
@@ -164,25 +164,25 @@
 
 	<section class="socials anim">
 		<div class="container">
-			<ul class="social-list">
-				<li id="facebook"><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
-				<li id="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></li>
-				<li id="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></li>
-				<li id="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></li>
+			<ul class="social-list anim">
+				<li id="facebook"><a  id="facebook" href="https://fb.me/boyespace"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+				<li><a id="instagram" href="https://www.instagram.com/boye_space"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				<li><a id="linkedin" href="https://www.linkedin.com/company/boyespace"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+				<li><a id="twitter" href="https://twitter.com/boye_space"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 			</ul>
 		</div>
 	</section>
 
-		<footer class="anim">
+	<footer class="anim">
 		<div class="container">
-			<p>Copyright &copy; 2018 - All rights reserved | Boye Designs</p>
+			<p>Copyright &copy; 2018 - All rights reserved | Boye Space</p>
 		</div>
 	</footer>
 
 	<script>
 		$(document).ready(function(){
 			$('.icon').click(function(){
-				$('.nav-item-mobile').toggle(800);
+				$('.nav-item-mobile').toggle(600);
 			});
 			$(window).on('scroll', function(){
 				if($(window).scrollTop()){

@@ -46,11 +46,13 @@ section.about-showcase div.about-showcase-content div.underline{
 
 /*
 Property of Boyespace 
+
+Mobile style
 */
 
 @media screen and (max-width: 980px){
 	section.about-showcase{
-		margin-top: 0px
+		margin-top: 9vh;
 	}
 	section.about-showcase div.about-showcase-content h2{
 		font-size: 25px;
