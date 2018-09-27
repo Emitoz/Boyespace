@@ -535,11 +535,53 @@ section.socials a#instagram:hover,section.socials a#linkedin:hover{
 
 
 footer {
-	background-color: #3c3c3c;
+	background-color: #000;
 	color: white;
-	padding-top: 25px;
 	text-align: center;
 	font-size: 15px;
+}
+footer p.copyright{
+	color: #cacaca;
+}
+footer button.get-in-touch{
+	letter-spacing: 2px;
+	padding-left: 50px;
+	padding-right: 50px;
+	border-radius: 2px;
+	background: #37abbd;
+	font-size: 14px;
+	height: 45px;
+	border: none;
+	color: #fff;
+	transition: .6s;
+}
+footer button.get-in-touch:hover{
+	background: #0078ff;
+}
+
+footer div.more-contact{
+	padding-top: 30px;
+	width: 100%;
+	background: #3a3a3a;
+	margin-bottom: 20px;
+}
+footer div.more-contact ul{
+	padding: 0;
+	margin: 0;
+	color: #cacaca;
+}
+
+footer ul li{
+	display: inline-block;
+}
+footer ul li.contact-icon{
+	margin-right: 10px
+}
+footer ul li.contact-phone{
+	margin-left: 10%;
+}
+footer ul li.phone-no{
+	margin-right: 10%;
 }
 
 /*
@@ -657,6 +699,26 @@ Mobile style
 
 	footer{
 		font-size: 12px;
+	}
+	footer button.get-in-touch{
+		font-size: 12px;
+		height: 40px;
+	}
+	footer ul li{
+		width: 100%;
+	}
+	footer ul li.contact-phone{
+		margin-left: 0;
+	}
+	footer ul li.phone-no{
+		margin-right: 0;
+	}
+
+	footer ul li.contact-icon{
+		margin-bottom: 5px;
+	}
+	footer ul li.contact-detail{
+		margin-bottom:10px;
 	}
 
 	.container{

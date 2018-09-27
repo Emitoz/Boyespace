@@ -223,9 +223,11 @@ div.reach-us-form div.service-form select{
 	border-radius: 4px;
 	transition: .6s;
 	outline: none;
+	letter-spacing: 2px;
 }
 div.reach-us-form div.service-form select:hover{
-	background: #000;
+	background: #88888c;
+	border: none;
 	color: white;
 }
 div.reach-us-form div.service-form select option{
@@ -242,6 +244,7 @@ div.reach-us-form div.service-form input.submit{
 	border: none;
 	margin-bottom: 0;
 	cursor: pointer;
+	letter-spacing: 2px;
 }
 div.reach-us-form div.service-form input.submit:hover{
 	background: #0078ff;
